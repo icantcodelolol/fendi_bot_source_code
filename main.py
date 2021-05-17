@@ -75,14 +75,6 @@ async def sbxss(guild: discord.Guild, user: discord.user):
                     
           await guild.ban(i.user, reason="Anti-Nuke")
 
-@client.command()
-async def nigger(ctx):
-  ctx.message.delete()
-  embed = discord.Embed(description=f"Server Not For NIGGERS", color=0x2f3136)
-
-  embed.add_field(name="smh", value="leave", inline=False)
-  embed.set_image(url="https://media.discordapp.net/attachments/793150621293346856/811335686199443526/image0-158-1.gif")
-  await ctx.send(embed=embed)
 
 @client.listen("on_guild_join")
 async def foo(guild):
